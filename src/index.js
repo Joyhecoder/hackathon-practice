@@ -8,6 +8,8 @@ import Login from './components/auth/Login'
 import Register from './components/auth/Register'
 import ToDo from './components/ToDo'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
