@@ -7,6 +7,7 @@ import App from './App';
 import Login from './components/auth/Login'
 import Register from './components/auth/Register'
 import ToDo from './components/ToDo'
+import BaseLayout from './layout/BaseLayout'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,12 +15,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
-    <Switch>
-      <Route path="/" element={<App />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register/>} />
-      <Route path="/toDo" element={<ToDo />} /> 
-    </Switch>
+    <BaseLayout>
+      <Switch>
+        <Route path="/" element={<App />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register/>} />
+        <Route path="/toDo" element={<ToDo />} /> 
+      </Switch>
+    </BaseLayout>
   </Router>
 );
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 const ToDo = () => {
   return (
-    <div>ToDo</div>
+    <div>this is the to do list page after login</div>
   )
 }
 
