@@ -15,18 +15,6 @@ const App = () => {
   return (
     <>
     <div className="movingText">
-      {/* <MovingText
-      className ="moving"
-      onAnimationEnd={handleChainAnimation}
-      type={animationType}
-      duration="8000ms"
-      delay="0s"
-      direction="normal"
-      timing="linear"
-      iteration="infinite"
-      fillMode="none">
-      Plan Ahead! GET IT DONE AHEAD!
-      </MovingText> */}
       <div className="animatedText">
         <p className='target'>Plan Ahead! GET IT DONE AHEAD!</p>
       </div>
