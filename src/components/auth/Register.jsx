@@ -31,7 +31,7 @@ const Register = () => {
       <div className="register">
         <img className="backgroundImg" src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2400&q=80" alt="background pic" />
         <div className="registerForm">
-          <Paper className="Form" className={classes.root}>
+          <Paper className={classes.root}>
               <Grid container spacing={3} direction={'column'} justifyContent={'center'} alignItems={"center"}>
 
                 <Grid item xs={12}>
