@@ -1,10 +1,8 @@
 import React, {useState} from 'react'
 import '../../css/styles.css';
 import {
-  Checkbox,
   Grid,
   TextField,
-  FormControlLabel,
   Paper,
   Button
 } from '@material-ui/core';
@@ -43,7 +41,7 @@ const Login = () => {
               </Grid>
           
               <Grid item xs={12}>
-                <Button fullWidth className='loginText' onClick={(e)=>handleSubmit(e)}>Login</Button>
+                <Button fullWidth onClick={(e)=>handleSubmit(e)}>Login</Button>
               </Grid>
             </Grid>
           </Paper>
