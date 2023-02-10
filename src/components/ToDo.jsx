@@ -35,10 +35,13 @@ const ToDo = () => {
   const classes = useStyles()
   const [value, setValue] = React.useState(null);
   const [toDo, setToDo] = useState('')
+  const [list, setList] = useState([])
 
   const handleSubmit = (e) =>{
     e.preventDefault()
     console.log(toDo);
+    setList([...list, toDo])
+    console.log(list)
     //!store toDo in db and display it on the list
   }
   return (
@@ -67,24 +70,19 @@ const ToDo = () => {
         justifyContent="center"
       >
           <Box ml={7} mr={7} className="toDo-list">
+
             <ul>
+              {list.map((toDo) => {
+                return  (
+               
               <li>
-                <Typography variant='h5'>clean dishes</Typography>
+                <Typography variant='h5'>{toDo}</Typography>
                 <Button variant="outlined">Edit</Button>
               </li>
-              <li>
-                <Typography variant='h5' m={9}>clean dishes</Typography>
-                <Button variant="outlined" m={2}>Edit</Button>
-              </li>
-              <li>
-                <Typography variant='h5' m={9}>clean dishes</Typography>
-                <Button variant="outlined" m={2}>Edit</Button>
-              </li>
-              <li>
-                <Typography variant='h5' m={9}>clean dishes</Typography>
-                <Button variant="outlined" m={2}>Edit</Button>
-              </li>
-             
+              
+              
+              )})}
+                    
               
             </ul>
           </Box>
