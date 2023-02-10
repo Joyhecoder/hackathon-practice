@@ -56,3 +56,46 @@
     top:8%;
 
 }
+
+
+/* styles for ToDo */
+.toDo-title, .toDo-Date {
+    background-Color: #7ba097;
+    font-size: 2rem;
+    font-weight: bold;
+    color: whitesmoke;
+    text-align: center;
+    border:#dad7cd solid 2px;
+    border-radius: 6%;
+}
+
+.toDo-Container {
+    background-color: #a3b18a;
+    height:100vh;
+}
+
+.toDo-Date{
+    height: 10vh;
+}
+
+.toDo-form {
+    display: flex;
+    margin-bottom: 2rem;
+
+}
+
+.toDo-list {
+    display:flex;
+    justify-content: center;
+    border: solid whitesmoke 1px;
+    background-color: #dad7cd;
+    width: 75%;
+}
+
+ul li{
+    display:flex;
+}
+
+.toDo-content {
+    margin: 5px;
+}
