@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import MovingText from 'react-moving-text'
 import "./index.css"
+import Quote from './Quote'
 
 const AnimationsForChaining = ["swing", "flipSlowDown", "fadeOutToBottom", "jelly"]
 
@@ -49,6 +50,7 @@ const App = () => {
       <div className="animatedText">
         <p className='target'>Plan Ahead! GET IT DONE AHEAD!</p>
       </div>
+      < Quote quoteList = {quotes}  />
       <img className="dogPic" src="https://media3.giphy.com/media/1oBwBVLGoLteCP2kyD/giphy.gif" alt="dog working on hw"  />
       
 
