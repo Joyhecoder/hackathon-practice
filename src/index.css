@@ -13,6 +13,7 @@ code {
 } */
 body {
   margin: 0px;
+  
 }
 
 /*? Nav Bar */
@@ -24,14 +25,15 @@ body {
 .movingText {
   background-color: #99c1b9;
   padding-top: 9%;
+  padding-bottom: 25%;
   border-color: rgb(0, 0, 0);
   border-style: solid;
   /*below is to cover the movingText div to the whole screen*/
-  position: absolute;
+  /* position: absolute;
   top: 7%;
   right:0px;
   bottom: 0px;
-  left: 0px;
+  left: 0px; */
 
   font-size: 45px;
   font-style: italic;
@@ -68,8 +70,25 @@ body {
 
 
 .dogPic {
-  height: 45%;
-  margin-top: 10%;
+  width: 15%;
+  height:auto;
+  margin-top: 15px;
   border-radius: 5%;
 }
 
+.quotes {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* height: auto; */
+}
+
+.quote-box {
+  border: dotted 2.5px greenyellow;
+  width: 20vw;
+  height: auto;
+  margin: 12px;
+}
+.quoteText {
+  font-size: 15px;
+}
