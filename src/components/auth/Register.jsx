@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import "../../css/styles.css"
+import { useNavigate } from 'react-router-dom'
 import {
   Grid,
   TextField,
@@ -20,10 +21,13 @@ const Register = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const classes = useStyles()
+
+  const navigate = useNavigate()
   //!need to connect this with backend for database
   const handleSubmit =(e) =>{
     e.preventDefault()
     console.log(userName, email, password)
+    navigate('/login')
   }
 
   return (

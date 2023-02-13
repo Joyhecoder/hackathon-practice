@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import '../../css/styles.css';
+import { useNavigate } from 'react-router-dom'
 import {
   Grid,
   TextField,
@@ -13,12 +14,15 @@ import {
 const Login = () => {
  const [userName, setUserName] = useState('')
  const [password, setPassword] = useState('')
+
+ const navigate = useNavigate()
  
 
  //!need to connect this with backend for authentication
  const handleSubmit = (e) =>{
   e.preventDefault()
   console.log(userName,password);
+  navigate('/toDo')
  }
  
   return (
