@@ -2,9 +2,9 @@ const express = require('express')
 const router = express.Router();
 const db = require('../models')
 
-router.get('/register', (req, res) => {
-    res.render('register')
-})
+// router.get('/register', (req, res) => {
+//     res.send()
+// })
 
 router.post('/registerBackend', async (req, res) => {
     console.log("registering an user")

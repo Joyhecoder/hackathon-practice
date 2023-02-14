@@ -24,9 +24,10 @@ const Register = () => {
 
   const navigate = useNavigate()
   //!need to connect this with backend for database
-  const handleSubmit =(e) =>{
+  const handleSubmit = (e) =>{
     e.preventDefault()
     console.log(userName, email, password)
+    fetch('http://localhost:3005/registerBackend', userName, email, password)
     navigate('/login')
   }
 
