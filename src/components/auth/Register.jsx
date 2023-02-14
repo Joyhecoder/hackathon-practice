@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import "../../css/styles.css"
+import { useNavigate } from 'react-router-dom'
 import {
   Grid,
   TextField,
@@ -20,16 +21,22 @@ const Register = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const classes = useStyles()
+
+  const navigate = useNavigate()
   //!need to connect this with backend for database
   const handleSubmit =(e) =>{
     e.preventDefault()
     console.log(userName, email, password)
+    navigate('/login')
   }
 
   return (
-    <div>
+    <div className='register-container'>
       <div className="register">
         <img className="backgroundImg" src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2400&q=80" alt="background pic" />
+      </div>
+
+      
         <div className="registerForm">
           <Paper className={classes.root}>
               <Grid container spacing={3} direction={'column'} justifyContent={'center'} alignItems={"center"}>
@@ -51,7 +58,7 @@ const Register = () => {
           </Paper>
         </div>
 
-      </div>
+      
      
 
       
